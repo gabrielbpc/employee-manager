@@ -1,4 +1,4 @@
-﻿using EmployeeManagerEngine.Interfaces.Base;
+﻿using EmployeeManagerEngine.Interface.Base;
 
 namespace EmployeeManagerEngine.Interfaces.Services
 {

@@ -6,5 +6,6 @@ namespace EmployeeManagerEngine.Core.Model
 {
     public class Gender : BaseModel
     {
+        public string Description { get; set; }
     }
 }

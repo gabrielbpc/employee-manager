@@ -1,6 +1,8 @@
-﻿namespace EmployeeManagerEngine.Interface.Repositories.Command
+﻿using EmployeeManagerEngine.Interface.Base;
+
+namespace EmployeeManagerEngine.Interface.Repositories.Command
 {
-    public interface IEmployeeCommandRepository
+    public interface IEmployeeCommandRepository: IRepository
     {
     }
 }

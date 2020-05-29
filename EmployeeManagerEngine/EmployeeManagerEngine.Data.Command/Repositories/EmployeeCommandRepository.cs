@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using EmployeeManagerEngine.Interface.Repositories.Command;
 
 namespace EmployeeManagerEngine.Data.Command.Repositories
 {
-    public class EmployeeCommandRepository
+    public class EmployeeCommandRepository : IEmployeeCommandRepository
     {
     }
 }

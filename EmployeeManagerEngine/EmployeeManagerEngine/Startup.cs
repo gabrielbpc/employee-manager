@@ -1,3 +1,4 @@
+using EmployeeManagerEngine.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +20,7 @@ namespace EmployeeManagerEngine
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.RegisterBindings();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -28,12 +30,12 @@ namespace EmployeeManagerEngine
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
