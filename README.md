@@ -7,18 +7,17 @@ Iremos desenvolver um sistema para cadastro de funcionários maiores de 18 anos 
 O sistema precisa conter as seguintes funcionalidades 
 
 Cadastro/Edição dos Funcionários
---> Nome Completo (obrigatório inclusive o sobrenome)
---> Data Nascimento (obrigatório e a data deve estar no formato BR)
---> Email (não obrigatório mas quando preenchido deve ser válido)
---> Sexo (obrigatório)
---> Habilidades (C#, Java, Angular, SQL, ASP) (obrigatório) 
+* Nome Completo (obrigatório inclusive o sobrenome)
+* Data Nascimento (obrigatório e a data deve estar no formato BR)
+* Email (não obrigatório mas quando preenchido deve ser válido)
+* Sexo (obrigatório)
+* Habilidades (C#, Java, Angular, SQL, ASP) (obrigatório) 
 
 
 Relatório 
---> Filtro por: Idade, Sexo, Habilidades (diferencial), Nome (autcomplete diferencial)
---> Colunas: Nome, Data Nascimento, Idade, Email, Sexo, Habilidades, Opção para Ativar / Desativar
---> Paginação (diferencial)
-
+* Filtro por: Idade, Sexo, Habilidades (diferencial), Nome (autcomplete diferencial)
+* Colunas: Nome, Data Nascimento, Idade, Email, Sexo, Habilidades, Opção para Ativar / Desativar
+* Paginação (diferencial)
 * Ao entrar no relatório deve trazer todos os registros cadastrados sem a necessidade de filtrar
 
 
