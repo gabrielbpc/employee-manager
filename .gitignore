@@ -4,3 +4,20 @@
 
 /EmployeeManagerEngine/.vs/EmployeeManagerEngine
 /EmployeeManagerEngine/EmployeeManagerEngine/obj
+/EmployeeManagerEngine/EmployeeManagerEngine/bin
+/EmployeeManagerEngine/EmployeeManagerEngine.Core/bin
+/EmployeeManagerEngine/EmployeeManagerEngine.Core/obj
+/EmployeeManagerEngine/EmployeeManagerEngine.Data.Command/bin
+/EmployeeManagerEngine/EmployeeManagerEngine.Data.Command/obj
+/EmployeeManagerEngine/EmployeeManagerEngine.Data.Query/obj
+/EmployeeManagerEngine/EmployeeManagerEngine.Data.Query/bin
+/EmployeeManagerEngine/EmployeeManagerEngine.Interface/obj
+/EmployeeManagerEngine/EmployeeManagerEngine.Interface/bin
+/EmployeeManagerEngine/EmployeeManagerEngine.IoC/obj
+/EmployeeManagerEngine/EmployeeManagerEngine.IoC/bin
+/EmployeeManagerEngine/EmployeeManagerEngine.Mediator/obj
+/EmployeeManagerEngine/EmployeeManagerEngine.Mediator/bin
+/EmployeeManagerEngine/EmployeeManagerEngine.Test.Unit/obj
+/EmployeeManagerEngine/EmployeeManagerEngine.Test.Unit/bin
+/EmployeeManagerEngine/EmployeeManagerEngine.Util/obj
+/EmployeeManagerEngine/EmployeeManagerEngine.Util/bin
