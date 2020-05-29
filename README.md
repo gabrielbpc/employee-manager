@@ -23,11 +23,11 @@ Relatório
 
 Tecnologias a serem utilizadas:
 
-WEB API C#
-EntityFramework (Code First) ou Dapper
-Angular ou MVC (Senior)
-MS SQL Server
-TDD (diferencial)
+* WEB API C#
+* EntityFramework (Code First) ou Dapper
+* Angular ou MVC (Senior)
+* MS SQL Server
+* TDD (diferencial)
 
 
 ** Caso utilize o Dapper criar uma pasta dentro da solution com o nome "Scripts DB" e salvar as consultas.
