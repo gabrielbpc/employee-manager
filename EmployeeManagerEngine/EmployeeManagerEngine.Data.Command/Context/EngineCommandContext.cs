@@ -15,5 +15,19 @@ namespace EmployeeManagerEngine.Data.Command.Context
         public EngineCommandContext(DbContextOptions options): base(options)
         {
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(EngineCommandContext).Assembly);
+            modelBuilder.Entity<Employee>()
+                        .HasMany(s => s.Skills)
+                        .WithMany(c => c.)
+                        .Map(cs =>
+                        {
+                            cs.MapLeftKey("StudentRefId");
+                            cs.MapRightKey("CourseRefId");
+                            cs.ToTable("StudentCourse");
+                        });
+        }
     }
 }
