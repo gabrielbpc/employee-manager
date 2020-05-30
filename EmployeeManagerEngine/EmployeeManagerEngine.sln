@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.IoC",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Interface", "EmployeeManagerEngine.Interface\EmployeeManagerEngine.Interface.csproj", "{872B7E49-1039-426D-8E11-C29113AC4A7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Service", "EmployeeManagerEngine.Service\EmployeeManagerEngine.Service.csproj", "{030E6280-AF57-470F-A498-AE66B6E5A508}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{872B7E49-1039-426D-8E11-C29113AC4A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{872B7E49-1039-426D-8E11-C29113AC4A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{872B7E49-1039-426D-8E11-C29113AC4A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{030E6280-AF57-470F-A498-AE66B6E5A508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030E6280-AF57-470F-A498-AE66B6E5A508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030E6280-AF57-470F-A498-AE66B6E5A508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030E6280-AF57-470F-A498-AE66B6E5A508}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +97,7 @@ Global
 		{E829E1E2-8C68-4E94-AF84-DAC1B0400B94} = {0DA2D5B9-AB2C-404F-958D-AFDABD79F5CC}
 		{0B7336B0-8A53-40E4-BCF8-46CFA42F7A2F} = {0DA2D5B9-AB2C-404F-958D-AFDABD79F5CC}
 		{872B7E49-1039-426D-8E11-C29113AC4A7F} = {91D7E3F4-8C7B-45DE-B6FC-956FA32ABA60}
+		{030E6280-AF57-470F-A498-AE66B6E5A508} = {91D7E3F4-8C7B-45DE-B6FC-956FA32ABA60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BB0E8C0-B420-4D42-ADFD-D30775444970}

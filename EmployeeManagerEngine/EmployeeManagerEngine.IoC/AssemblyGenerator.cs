@@ -1,4 +1,4 @@
-﻿using EmployeeManagerEngine.Core.Services;
+﻿using EmployeeManagerEngine.Service;
 using EmployeeManagerEngine.Data.Command.Repositories;
 using System.Collections.Generic;
 using System.Reflection;
