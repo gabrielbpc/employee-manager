@@ -6,9 +6,9 @@ namespace EmployeeManagerEngine.Data.Command.Repositories
     public abstract class BaseRepository<TEntity> where TEntity : class
     {
         protected DbSet<TEntity> DbSet => _context.Set<TEntity>();
-        private readonly IEngineCommandContext _context;
+        private readonly EngineCommandContext _context;
 
-        protected BaseRepository(IEngineCommandContext commandContext) => _context = commandContext;
+        protected BaseRepository(EngineCommandContext commandContext) => _context = commandContext;
 
         public TEntity Save(TEntity entity)
         {

@@ -10,6 +10,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EmployeeManagerEngine.IoC\EmployeeManagerEngine.IoC.csproj" />
+    <ProjectReference Include="..\EmployeeManagerEngine.Mediator\EmployeeManagerEngine.Mediator.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\" />
   </ItemGroup>
 
 

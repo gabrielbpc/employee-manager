@@ -8,10 +8,5 @@ namespace EmployeeManagerEngine.Util.Mapper
         {
             return MapperConfiguration.Mapper.Map<TSource, TDestination>(source);
         }
-
-        public static TDestination MapTo<TSource, TDestination>(this TSource source, TDestination destination)
-        {
-            return MapperConfiguration.Mapper.Map(source, destination);
-        }
     }
 }

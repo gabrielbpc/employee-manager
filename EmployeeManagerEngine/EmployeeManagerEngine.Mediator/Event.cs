@@ -1,8 +1,8 @@
-﻿using System;
+﻿using MediatR;
 
 namespace EmployeeManagerEngine.Mediator
 {
-    public class Class1
+    public class Event : INotification
     {
     }
 }

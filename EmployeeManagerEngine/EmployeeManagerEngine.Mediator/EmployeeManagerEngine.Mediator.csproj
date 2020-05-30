@@ -8,4 +8,10 @@
     <PackageReference Include="MediatR" Version="8.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeManagerEngine.Core\EmployeeManagerEngine.Model.csproj" />
+    <ProjectReference Include="..\EmployeeManagerEngine.Interface\EmployeeManagerEngine.Interface.csproj" />
+    <ProjectReference Include="..\EmployeeManagerEngine.Util\EmployeeManagerEngine.Util.csproj" />
+  </ItemGroup>
+
 </Project>

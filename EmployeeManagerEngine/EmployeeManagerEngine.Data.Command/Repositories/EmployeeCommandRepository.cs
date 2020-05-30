@@ -6,6 +6,6 @@ namespace EmployeeManagerEngine.Data.Command.Repositories
 {
     public class EmployeeCommandRepository : BaseRepository<Employee>, IEmployeeCommandRepository
     {
-        public EmployeeCommandRepository(IEngineCommandContext context) : base(context) { }
+        public EmployeeCommandRepository(EngineCommandContext context) : base(context) { }
     }
 }

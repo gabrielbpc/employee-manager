@@ -9,6 +9,9 @@ namespace EmployeeManagerEngine.Core.Model
         public string LastName { get; set; }
         public DateTime Born { get; set; }
         public string Email { get; set; }
+        public int GenderId { get; set; }
+        public int SkillIds { get; set; } // check many to many relationship
+
         public virtual Gender Gender { get; set; }
         public virtual ICollection<Skill> Skills { get; set; }
     }
