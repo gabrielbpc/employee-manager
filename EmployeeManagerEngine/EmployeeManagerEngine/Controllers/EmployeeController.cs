@@ -1,27 +1,36 @@
-﻿using EmployeeManagerEngine.Mediator;
-using EmployeeManagerEngine.Mediator.Commands.Employee;
+﻿using EmployeeManagerEngine.Interfaces.Services;
+using EmployeeManagerEngine.Model.Contracts.Employee;
 using EmployeeManagerEngine.Model.DTO;
+using EmployeeManagerEngine.Util.Mapper;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace EmployeeManagerEngine.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        private readonly IMediatorHandler _mediator;
-        public EmployeeController(IMediatorHandler mediator)
+        [HttpPost]
+        public IActionResult Create([FromServices] IEmployeeService employeeService, CreateEmployeeRequest request)
         {
-            _mediator = mediator;
+            var createDto = request.MapTo<CreateEmployeeRequest, EmployeeDto>();
+            var result = employeeService.Create(createDto);
+
+            return Ok(result);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create()
+        [HttpPut]
+        public IActionResult Update([FromServices] IEmployeeService employeeService, UpdateEmployeeRequest request)
         {
-            var create = new CreateEmployeeCommand();
-            var result = await _mediator.SendCommand<CreateEmployeeCommand, EmployeeDto>(create);
-            
+            var createDto = request.MapTo<UpdateEmployeeRequest, EmployeeDto>();
+            var result = employeeService.Update(createDto);
+
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public IActionResult List()
+        {
             return Ok();
         }
 

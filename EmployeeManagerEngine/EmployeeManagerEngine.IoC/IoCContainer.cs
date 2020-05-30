@@ -3,14 +3,12 @@ using EmployeeManagerEngine.Data.Command.Repositories;
 using EmployeeManagerEngine.Interface.Repositories.Command;
 using EmployeeManagerEngine.Interfaces.Services;
 using EmployeeManagerEngine.Service;
+using EmployeeManagerEngine.Util.Mapper.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MediatR;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using EmployeeManagerEngine.Mediator;
-using EmployeeManagerEngine.Util.Mapper.Configuration;
 
 namespace EmployeeManagerEngine.IoC
 {
@@ -20,10 +18,8 @@ namespace EmployeeManagerEngine.IoC
         {
             var assemblies = AssemblyGenerator.GetAssemblies();
 
-            services.AddMediatR(typeof(InMemoryBus).Assembly);
             services.AddTransient<IEmployeeService, EmployeeService>();
             services.AddTransient<IEmployeeCommandRepository, EmployeeCommandRepository>();
-            services.AddTransient<IMediatorHandler, InMemoryBus>();
             MapperConfiguration.Init();
         }
 
