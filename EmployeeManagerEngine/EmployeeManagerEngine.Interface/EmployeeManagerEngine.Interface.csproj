@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EmployeeManagerEngine.Core\EmployeeManagerEngine.Core.csproj" />
+    <ProjectReference Include="..\EmployeeManagerEngine.Core\EmployeeManagerEngine.Model.csproj" />
   </ItemGroup>
 
 </Project>

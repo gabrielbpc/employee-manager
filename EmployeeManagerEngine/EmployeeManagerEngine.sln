@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2 - Cross Cutting", "3.2 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Test", "4 - Test", "{E012E291-FF0B-491F-9CD9-8925A6134D1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Core", "EmployeeManagerEngine.Core\EmployeeManagerEngine.Core.csproj", "{411433CE-219D-4733-B0DA-B29F881A244A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Model", "EmployeeManagerEngine.Core\EmployeeManagerEngine.Model.csproj", "{411433CE-219D-4733-B0DA-B29F881A244A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Test.Unit", "EmployeeManagerEngine.Test.Unit\EmployeeManagerEngine.Test.Unit.csproj", "{347580EB-FF6A-4896-8AE8-B84CF877F1A2}"
 EndProject
