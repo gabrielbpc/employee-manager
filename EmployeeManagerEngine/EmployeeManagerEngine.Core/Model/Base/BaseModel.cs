@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EmployeeManagerEngine.Core.Model
+namespace EmployeeManagerEngine.Model
 {
     public abstract class BaseModel
     {

@@ -1,4 +1,5 @@
-﻿using EmployeeManagerEngine.Core.Model;
+﻿using EmployeeManagerEngine.Data.Command.Mappings;
+using EmployeeManagerEngine.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
@@ -9,6 +10,7 @@ namespace EmployeeManagerEngine.Data.Command.Context
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Gender> Genders { get; set; }
         public DbSet<Skill> Skills { get; set; }
+        public DbSet<EmployeeSkill> EmployeeSkills { get; set; }
 
         public DatabaseFacade DatabaseFacade => base.Database;
 
@@ -18,16 +20,10 @@ namespace EmployeeManagerEngine.Data.Command.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(EngineCommandContext).Assembly);
-            modelBuilder.Entity<Employee>()
-                        .HasMany(s => s.Skills)
-                        .WithMany(c => c.)
-                        .Map(cs =>
-                        {
-                            cs.MapLeftKey("StudentRefId");
-                            cs.MapRightKey("CourseRefId");
-                            cs.ToTable("StudentCourse");
-                        });
+            modelBuilder.ApplyConfiguration(new EmployeeMapping());
+            modelBuilder.ApplyConfiguration(new SkillMapping());
+            modelBuilder.ApplyConfiguration(new GenderMapping());
+            modelBuilder.ApplyConfiguration(new EmployeeSkillMapping());
         }
     }
 }

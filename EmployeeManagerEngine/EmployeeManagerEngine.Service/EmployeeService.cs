@@ -1,6 +1,6 @@
-﻿using EmployeeManagerEngine.Core.Model;
-using EmployeeManagerEngine.Interface.Repositories.Command;
+﻿using EmployeeManagerEngine.Interface.Repositories.Command;
 using EmployeeManagerEngine.Interfaces.Services;
+using EmployeeManagerEngine.Model;
 using EmployeeManagerEngine.Model.DTO;
 using EmployeeManagerEngine.Util.Mapper;
 

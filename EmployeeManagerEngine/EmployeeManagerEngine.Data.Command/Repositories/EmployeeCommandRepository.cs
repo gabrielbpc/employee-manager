@@ -1,6 +1,6 @@
-﻿using EmployeeManagerEngine.Core.Model;
-using EmployeeManagerEngine.Data.Command.Context;
+﻿using EmployeeManagerEngine.Data.Command.Context;
 using EmployeeManagerEngine.Interface.Repositories.Command;
+using EmployeeManagerEngine.Model;
 
 namespace EmployeeManagerEngine.Data.Command.Repositories
 {

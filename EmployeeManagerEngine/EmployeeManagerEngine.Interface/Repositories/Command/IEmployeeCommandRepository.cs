@@ -1,5 +1,5 @@
-﻿using EmployeeManagerEngine.Core.Model;
-using EmployeeManagerEngine.Interface.Base;
+﻿using EmployeeManagerEngine.Interface.Base;
+using EmployeeManagerEngine.Model;
 
 namespace EmployeeManagerEngine.Interface.Repositories.Command
 {

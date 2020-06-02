@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EmployeeManagerEngine.Core.Model
+namespace EmployeeManagerEngine.Model
 {
     public class Gender : BaseModel
     {

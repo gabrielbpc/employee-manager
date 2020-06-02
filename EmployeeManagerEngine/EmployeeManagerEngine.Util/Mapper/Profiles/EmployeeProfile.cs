@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using EmployeeManagerEngine.Core.Model;
+using EmployeeManagerEngine.Model;
 using EmployeeManagerEngine.Model.Contracts.Employee;
 using EmployeeManagerEngine.Model.DTO;
 

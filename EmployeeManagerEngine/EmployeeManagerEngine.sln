@@ -17,21 +17,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2 - Cross Cutting", "3.2 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Test", "4 - Test", "{E012E291-FF0B-491F-9CD9-8925A6134D1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Model", "EmployeeManagerEngine.Core\EmployeeManagerEngine.Model.csproj", "{411433CE-219D-4733-B0DA-B29F881A244A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagerEngine.Model", "EmployeeManagerEngine.Core\EmployeeManagerEngine.Model.csproj", "{411433CE-219D-4733-B0DA-B29F881A244A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Test.Unit", "EmployeeManagerEngine.Test.Unit\EmployeeManagerEngine.Test.Unit.csproj", "{347580EB-FF6A-4896-8AE8-B84CF877F1A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagerEngine.Test.Unit", "EmployeeManagerEngine.Test.Unit\EmployeeManagerEngine.Test.Unit.csproj", "{347580EB-FF6A-4896-8AE8-B84CF877F1A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Data.Command", "EmployeeManagerEngine.Data.Command\EmployeeManagerEngine.Data.Command.csproj", "{17A06A56-D634-4FCB-B390-CCFCBD773CF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagerEngine.Data.Command", "EmployeeManagerEngine.Data.Command\EmployeeManagerEngine.Data.Command.csproj", "{17A06A56-D634-4FCB-B390-CCFCBD773CF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Data.Query", "EmployeeManagerEngine.Data.Query\EmployeeManagerEngine.Data.Query.csproj", "{F34720BF-2340-4579-B61F-13F035ABC6AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagerEngine.Data.Query", "EmployeeManagerEngine.Data.Query\EmployeeManagerEngine.Data.Query.csproj", "{F34720BF-2340-4579-B61F-13F035ABC6AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Util", "EmployeeManagerEngine.Util\EmployeeManagerEngine.Util.csproj", "{E829E1E2-8C68-4E94-AF84-DAC1B0400B94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagerEngine.Util", "EmployeeManagerEngine.Util\EmployeeManagerEngine.Util.csproj", "{E829E1E2-8C68-4E94-AF84-DAC1B0400B94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.IoC", "EmployeeManagerEngine.IoC\EmployeeManagerEngine.IoC.csproj", "{0B7336B0-8A53-40E4-BCF8-46CFA42F7A2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagerEngine.IoC", "EmployeeManagerEngine.IoC\EmployeeManagerEngine.IoC.csproj", "{0B7336B0-8A53-40E4-BCF8-46CFA42F7A2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Interface", "EmployeeManagerEngine.Interface\EmployeeManagerEngine.Interface.csproj", "{872B7E49-1039-426D-8E11-C29113AC4A7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagerEngine.Interface", "EmployeeManagerEngine.Interface\EmployeeManagerEngine.Interface.csproj", "{872B7E49-1039-426D-8E11-C29113AC4A7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagerEngine.Service", "EmployeeManagerEngine.Service\EmployeeManagerEngine.Service.csproj", "{030E6280-AF57-470F-A498-AE66B6E5A508}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagerEngine.Service", "EmployeeManagerEngine.Service\EmployeeManagerEngine.Service.csproj", "{030E6280-AF57-470F-A498-AE66B6E5A508}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL SCRIPTS", "SQL SCRIPTS", "{AE798168-3E5C-4FEC-AEC9-FB56D51EA0F4}"
+	ProjectSection(SolutionItems) = preProject
+		CREATE_TABLES.sql = CREATE_TABLES.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +96,7 @@ Global
 		{0B7336B0-8A53-40E4-BCF8-46CFA42F7A2F} = {0DA2D5B9-AB2C-404F-958D-AFDABD79F5CC}
 		{872B7E49-1039-426D-8E11-C29113AC4A7F} = {91D7E3F4-8C7B-45DE-B6FC-956FA32ABA60}
 		{030E6280-AF57-470F-A498-AE66B6E5A508} = {91D7E3F4-8C7B-45DE-B6FC-956FA32ABA60}
+		{AE798168-3E5C-4FEC-AEC9-FB56D51EA0F4} = {56A13502-4C20-4C34-968C-E3A133376B5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BB0E8C0-B420-4D42-ADFD-D30775444970}
