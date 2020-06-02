@@ -3,6 +3,7 @@ using EmployeeManagerEngine.Model.Contracts.Employee;
 using EmployeeManagerEngine.Model.DTO;
 using EmployeeManagerEngine.Util.Mapper;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace EmployeeManagerEngine.Controllers
 {
@@ -13,19 +14,34 @@ namespace EmployeeManagerEngine.Controllers
         [HttpPost]
         public IActionResult Create([FromServices] IEmployeeService employeeService, CreateEmployeeRequest request)
         {
-            var createDto = request.MapTo<CreateEmployeeRequest, EmployeeDto>();
-            var result = employeeService.Create(createDto);
+            try
+            {
+                var createDto = request.MapTo<CreateEmployeeRequest, EmployeeDto>();
+                var result = employeeService.Create(createDto);
 
-            return Ok(result);
+                return Ok(result);
+
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPut]
         public IActionResult Update([FromServices] IEmployeeService employeeService, UpdateEmployeeRequest request)
         {
-            var createDto = request.MapTo<UpdateEmployeeRequest, EmployeeDto>();
-            var result = employeeService.Update(createDto);
+            try
+            {
+                var createDto = request.MapTo<UpdateEmployeeRequest, EmployeeDto>();
+                var result = employeeService.Update(createDto);
 
-            return Ok(result);
+                return Ok(result);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet]

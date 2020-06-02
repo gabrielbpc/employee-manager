@@ -1,11 +1,12 @@
 ﻿using EmployeeManagerEngine.Interface.Base;
 using EmployeeManagerEngine.Model;
 
-namespace EmployeeManagerEngine.Interface.Repositories.Command
+namespace EmployeeManagerEngine.Interface.Repositories
 {
-    public interface IEmployeeCommandRepository: IRepository
+    public interface IEmployeeRepository : IRepository
     {
         Employee Save(Employee employee);
         Employee Update(Employee employee);
+        bool Exists(int id);
     }
 }

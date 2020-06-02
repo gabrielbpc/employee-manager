@@ -10,8 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EmployeeManagerEngine.Data.Command\EmployeeManagerEngine.Data.Command.csproj" />
-    <ProjectReference Include="..\EmployeeManagerEngine.Data.Query\EmployeeManagerEngine.Data.Query.csproj" />
+    <ProjectReference Include="..\EmployeeManagerEngine.Data.Command\EmployeeManagerEngine.Data.csproj" />
     <ProjectReference Include="..\EmployeeManagerEngine.Interface\EmployeeManagerEngine.Interface.csproj" />
     <ProjectReference Include="..\EmployeeManagerEngine.Service\EmployeeManagerEngine.Service.csproj" />
   </ItemGroup>

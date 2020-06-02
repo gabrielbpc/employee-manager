@@ -3,9 +3,9 @@ using EmployeeManagerEngine.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
-namespace EmployeeManagerEngine.Data.Command.Context
+namespace EmployeeManagerEngine.Data.Context
 {
-    public class EngineCommandContext : DbContext
+    public class EngineContext : DbContext
     {
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Gender> Genders { get; set; }
@@ -14,7 +14,7 @@ namespace EmployeeManagerEngine.Data.Command.Context
 
         public DatabaseFacade DatabaseFacade => base.Database;
 
-        public EngineCommandContext(DbContextOptions options): base(options)
+        public EngineContext(DbContextOptions options): base(options)
         {
         }
 

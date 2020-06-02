@@ -1,16 +1,14 @@
-﻿using EmployeeManagerEngine.Data.Command.Context;
-using EmployeeManagerEngine.Model;
+﻿using EmployeeManagerEngine.Data.Context;
 using Microsoft.EntityFrameworkCore;
-using System;
 
-namespace EmployeeManagerEngine.Data.Command.Repositories
+namespace EmployeeManagerEngine.Data.Repositories
 {
     public abstract class BaseRepository<TEntity> where TEntity : class
     {
         protected DbSet<TEntity> DbSet => _context.Set<TEntity>();
-        private readonly EngineCommandContext _context;
+        private readonly EngineContext _context;
 
-        protected BaseRepository(EngineCommandContext commandContext) => _context = commandContext;
+        protected BaseRepository(EngineContext commandContext) => _context = commandContext;
 
         public TEntity Save(TEntity entity)
         {
