@@ -1,5 +1,7 @@
 ﻿using EmployeeManagerEngine.Data.Command.Context;
+using EmployeeManagerEngine.Model;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace EmployeeManagerEngine.Data.Command.Repositories
 {
@@ -13,6 +15,7 @@ namespace EmployeeManagerEngine.Data.Command.Repositories
         public TEntity Save(TEntity entity)
         {
             var entry =  DbSet.Add(entity);
+
             SaveChanges();
 
             return entry.Entity;
@@ -21,14 +24,12 @@ namespace EmployeeManagerEngine.Data.Command.Repositories
         public TEntity Update(TEntity entity)
         {
             var entry = DbSet.Update(entity);
+
             SaveChanges();
 
             return entry.Entity;
         }
 
-        private void SaveChanges()
-        {
-            _context.SaveChanges();
-        }
+        private void SaveChanges() => _context.SaveChanges();
     }
 }

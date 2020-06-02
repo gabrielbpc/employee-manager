@@ -1,7 +1,7 @@
 ﻿using EmployeeManagerEngine.Data.Command.Context;
 using EmployeeManagerEngine.Data.Command.Repositories;
 using EmployeeManagerEngine.Interface.Repositories.Command;
-using EmployeeManagerEngine.Interfaces.Services;
+using EmployeeManagerEngine.Interface.Services;
 using EmployeeManagerEngine.Service;
 using EmployeeManagerEngine.Util.Mapper.Configuration;
 using Microsoft.EntityFrameworkCore;

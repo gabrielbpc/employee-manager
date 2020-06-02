@@ -11,6 +11,7 @@ namespace EmployeeManagerEngine.Util.Mapper.Profiles
         {
             CreateMap<EmployeeDto, Employee>().ReverseMap();
             CreateMap<CreateEmployeeRequest, EmployeeDto>().ReverseMap();
+            CreateMap<UpdateEmployeeRequest, EmployeeDto>().ReverseMap();
         }
     }
 }

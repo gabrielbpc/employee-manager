@@ -1,7 +1,7 @@
 ﻿using EmployeeManagerEngine.Interface.Base;
 using EmployeeManagerEngine.Model.DTO;
 
-namespace EmployeeManagerEngine.Interfaces.Services
+namespace EmployeeManagerEngine.Interface.Services
 {
     public interface IEmployeeService : IService
     {

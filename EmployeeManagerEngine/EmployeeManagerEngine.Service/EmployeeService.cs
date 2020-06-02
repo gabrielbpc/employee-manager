@@ -1,8 +1,9 @@
 ﻿using EmployeeManagerEngine.Interface.Repositories.Command;
-using EmployeeManagerEngine.Interfaces.Services;
+using EmployeeManagerEngine.Interface.Services;
 using EmployeeManagerEngine.Model;
 using EmployeeManagerEngine.Model.DTO;
 using EmployeeManagerEngine.Util.Mapper;
+using System;
 
 namespace EmployeeManagerEngine.Service
 {
@@ -19,6 +20,9 @@ namespace EmployeeManagerEngine.Service
         {
             var employee = dto.MapTo<EmployeeDto, Employee>();
 
+            if (employee.EmailIsInvalid())
+                throw new InvalidOperationException("Invalid email");
+
             employee = _employeeRepository.Save(employee);
 
             return employee.MapTo<Employee, EmployeeDto>();
@@ -28,6 +32,7 @@ namespace EmployeeManagerEngine.Service
         {
             var employee = dto.MapTo<EmployeeDto, Employee>();
 
+            employee.UpdateLastModifiedDate();
             employee = _employeeRepository.Update(employee);
 
             return employee.MapTo<Employee, EmployeeDto>();
